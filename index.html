@@ -1,10 +1,10 @@
 <!DOCTYPE html> 
 <html>
 <body bgcolor="black">
-<h1 style="font-family:papyrus" align="center"><font color="yellow">Welcome to mylore.biz</h1>
-<p style="font-family:papyrus" align="center" font size="18"><font color="yellow"><b>This is a personal webpage written in HTML, aiming to replicate those of the early 2000s. My name is Aaron and I am an aspiring Information Security Professional, please click the link(s) below to view my projects on github<br>(if you would like access, please contact me via LinkedIn)</b></p>
+<h1 style="font-family:papyrus" align="center"><font color="yellow">Welcome to mylore.net</h1>
+<p style="font-family:papyrus" align="center" font size="18"><font color="yellow"><b>This is a personal webpage written in HTML and some light JavaScript, aiming to replicate those of the early 2000s. My name is Aaron and I am an aspiring Information Security Professional, please click the link(s) below to view my projects on github<br>(if you would like access, please contact me via LinkedIn)</b></p>
 <p style="font-family:papyrus"> Me: </p>
-<img align="left" src="me.htm" alt="me" width="200" height="200">
+<img align="left" src="box.htm" alt="me" width="200" height="200">
 <img align="right" src="dunk.gif" alt="dunk" width="200" height="200">
 <br>
 <br>
@@ -23,18 +23,35 @@
 <br>
 <br>
 <br>
-<br>
-<br>
-<p style="font-family:papyrus"> Some music I made for <i>ambience</i> : </p>
+<p style="font-family:papyrus"> Some music I made, for <i>ambience</i> : </p>
 <audio id="bgmus" src="bg_music_by_me.m4a"></audio>
+<center>
 <button onclick="play()" type="button">Play Audio</button>
 <button onclick="pause()" type="button">Pause Audio</button>
+</center>
 <script>
 var wpm = document.getElementById("bgmus");
 function play() {
 wpm.play();}
 function pause() {
 wpm.pause();}
+</script>
+<br>
+<p style="font-family:papyrus"> Video of me shredding: </p>
+<center>
+<video id="shred" width="200" height="200" src="shred.mp4"></video></center>
+<br>
+<center>
+<button onclick="vplay()" type="button">Rock!</button>
+<button onclick="vpause()" type="button">Pause!</button>
+</center>
+<script>
+var vid = document.getElementById("shred");
+vid.volume=0.3
+function vplay() {
+vid.play();}
+function vpause() {
+vid.pause();}
 </script>
 </body>
 </html> 
