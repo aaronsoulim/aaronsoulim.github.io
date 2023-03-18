@@ -11,6 +11,7 @@
 <center>
 <p onclick="myFound2()" id="msg"></p>
 <br>
+<p onclick="iCheck()" id="last2"></p>
 <a id="last" href="./mother"></a>
 </center>
 <br>
@@ -26,7 +27,7 @@
 <br>
 <br>
 <br>
-<p font size = "5" align = "right" id="but" onclick="myFound()">.</p>
+<p align = "right" id="but" onclick="myFound()">.</p>
 <script>
 function myFound() {
 var txt;
@@ -53,8 +54,23 @@ txt2 = "This secret is not for you...";}
 document.getElementById("msg").innerHTML = txt2
 document.getElementById("tit").innerHTML = txt3
 document.getElementById("subtit").innerHTML = null
-document.getElementById("last").innerHTML = txt4;
+document.getElementById("last2").innerHTML = txt4;
 }
+</script>
+<script>
+function iCheck() {
+let itxt;
+let itxt2;
+let proof = prompt("Prove it...", "What's the name of my favourite childhood _?");
+if (proof == null || proof == ""){
+itxt = "Given up have we?"}
+if (proof == "Charlie" || proof == "charlie"){
+itxt = "Well that's something only my mother could know..."
+itxt2 = "Click Away"}
+else {
+itxt = "Not such an easy question, huh?";}
+document.getElementById("last").innerHTML = itxt2
+document.getElementById("last2").innerHTML = itxt;}
 </script>
 </center>
 </body>
