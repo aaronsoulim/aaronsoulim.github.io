@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+<html>
+<body background="myst.htm" style="font-family:papyrus" font color="pink">
+<body link="white" alink="green" vlink="white"> 
+<h1 id="tit" style="font-family:papyrus" align="center"><font color="pink">Hmm... What could this page be?</h1>
+<p id="subtit" style="font-family:papyrus" align="center" font size="18"><font color="pink"><b>Can you reveal its secret?</b></p>
+<br>
+<br>
+<br>
+<br>
+<center>
+<p onclick="myFound2()" id="msg"></p>
+<br>
+<a id="last" href="./mother"></a>
+</center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p align = "right" id="but" onclick="myFound()">.</p>
+<script>
+function myFound() {
+var txt;
+if (confirm("You found the secret!")){
+txt="Click Me";
+} else {
+txt = "why would you press cancel -_-";}
+document.getElementById("msg").innerHTML = txt;
+}
+</script>
+<script>
+function myFound2() {
+let txt2;
+let txt3; 
+let iden = prompt("Who are you?", "Well... who are you?");
+if (iden == null || iden == "") {
+txt2 = "Nobody? Huh..."}
+if (iden == "Mum" || iden == "mum"){
+txt2 = null
+txt3 = "Very Good..."
+txt4 = "Now, Click Me!"}
+else {
+txt2 = "This secret is not for you...";}
+document.getElementById("msg").innerHTML = txt2
+document.getElementById("tit").innerHTML = txt3
+document.getElementById("subtit").innerHTML = null
+document.getElementById("last").innerHTML = txt4;
+}
+</script>
+</center>
+</body>
+</html> 
