@@ -45,7 +45,7 @@ let txt3;
 let iden = prompt("Who are you?", "Well... who are you?");
 if (iden == null || iden == "") {
 txt2 = "Nobody? Huh..."}
-if (iden == "Mum" || iden == "mum"){
+else if (iden == "Mum" || iden == "mum"){
 txt2 = null
 txt3 = "Very Good..."
 txt4 = "Now, Click Me!"}
@@ -61,14 +61,16 @@ document.getElementById("last2").innerHTML = txt4;
 function iCheck() {
 let itxt;
 let itxt2;
-let proof = prompt("Prove it...", "What's the name of my favourite childhood _?");
+let proof = prompt("Prove it...", "What's the name of my favourite childhood ___?");
 if (proof == null || proof == ""){
-itxt = "Given up have we?"}
-if (proof == "Charlie" || proof == "charlie"){
+itxt = "Given up have we?"
+itxt2 = null}
+else if (proof == "Charlie" || proof == "charlie"){
 itxt = "Well that's something only my mother could know..."
 itxt2 = "Click Away"}
 else {
-itxt = "Not such an easy question, huh?";}
+itxt = "Not such an easy question, huh?"
+itxt2 = null;}
 document.getElementById("last").innerHTML = itxt2
 document.getElementById("last2").innerHTML = itxt;}
 </script>
