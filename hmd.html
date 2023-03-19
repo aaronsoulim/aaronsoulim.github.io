@@ -44,13 +44,15 @@ let txt2;
 let txt3; 
 let iden = prompt("Who are you?", "Well... who are you?");
 if (iden == null || iden == "") {
-txt2 = "Nobody? Huh..."}
+txt2 = "Nobody? Huh..."
+txt3 = null}
 else if (iden == "Mum" || iden == "mum"){
 txt2 = null
 txt3 = "Very Good..."
 txt4 = "Now, Click Me!"}
 else {
-txt2 = "This secret is not for you...";}
+txt2 = "This secret is not for you..."
+txt3 = null;}
 document.getElementById("msg").innerHTML = txt2
 document.getElementById("tit").innerHTML = txt3
 document.getElementById("subtit").innerHTML = null
