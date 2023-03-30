@@ -52,9 +52,20 @@ vid.play();}
 function vpause() {
 vid.pause();}
 </script>
-<nav>
-<a style="font-family:papyrus" href="./hmd">?</a>
-<a style="font-family:papyrus" href="./blog">Blog</a>
+<center>
+<p onclick="onClick()" id="fm">.</p>
+<a style="font-family:papyrus" href="./hmd" id="fmlnk"></a>
+<script>
+function onClick() {
+var masage;
+if (confirm("You found a secret!")){
+txt="Mother's Day Challenge";
+} else {
+txt = "why would you press cancel -_-";}
+document.getElementById("fmlnk").innerHTML = masage;
+}
+  </script>
+</center>
 </nav>
 </body>
 </html> 
