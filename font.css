@@ -1,0 +1,16 @@
+@font-face
+{
+	font-family: 'gothic';
+	src: url('/BIZUDGothic-Regular.ttf') format('truetype');
+}
+@font-face
+{
+	font-family: 'pre';
+	src: url('/VT323-Regular.ttf') format('truetype');
+}
+
+body
+{
+	font-family: 'pre'; font-size:20px
+}
+
