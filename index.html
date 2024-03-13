@@ -44,8 +44,8 @@ wpm.pause();}
 
 <video id="shred" width="200" height="200" src="shred.mp4"></video>
 <br>
-<button onclick="vplay()" type="button">Rock!</button>
-<button onclick="vpause()" type="button">Pause!</button>
+<a onclick="vplay()">Rock!</a>
+<a onclick="vpause()">Pause!</a>
 <script>
 var vid = document.getElementById("shred");
 vid.volume=0.3
@@ -71,15 +71,15 @@ document.getElementById("fmlnk").innerHTML = masage;
 
 <video id="blues" width="200" height="200" src="rhintro-redo-360p30.mov"></video>
 <br>
-<button onclick="vplay2()" type="button">Blues!</button>
-<button onclick="vpause2()" type="button">Pause!</button>
+<a onclick="vplay2()">Blues!</a>
+<a onclick="vpause2()">Pause!</a>
 <script>
-var vid = document.getElementById("blues");
+var vid2 = document.getElementById("blues");
 vid.volume=1
 function vplay2() {
-vid.play();}
+vid2.play();}
 function vpause2() {
-vid.pause();}
+vid2.pause();}
 </script>
 <p> Download:</p>
 <a><i>this (down, temporarily)</i></a>
